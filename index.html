@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 5 - Stoper with modal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/fontello-41a5a7b5/css/fontello.css">
+    <script src="script.js" async></script>
+</head>
+<body>
+
+<div id="modalWindow" class="hidden">
+    <h1 id="instrukcja">Instrukcja:</h1>
+    <span id="insPlay" class="icon-play-1 orangeBg"><span style="color:white">- start</span></span>
+    <span id="insPause" class="icon-pause orangeBg"><span style="color:white">- pauza</span></span>
+    <span id="insStop" class="icon-stop-1 orangeBg"><span style="color:white">- stop</span></span>
+    <span id="insCancel" class="icon-cancel orangeBg"><span style="color:white">- skasuj wszystko (łącznie z archiwum)</span></span>
+    <span style="margin-left: 22px;"><span class="insArch" id="insArch">archiwum</span><span style="color:white"> - zobacz wcześniejsze pomiary</span>
+    <button id="close" class="close">Zamknij</button>
+</div>
+<div id="container">
+    <div id="modal">
+        <button id="paint" class="icon-brush-1"></button>
+        <button id="help" class="icon-help"></button>
+    </div>
+<div id="stoper">
+        <h1>Stoper</h1>
+        <div id="timeResult">
+            <p id="actualTime"><span></span><span id="min">0</span><span id="colon">:</span><span id="secDecimal">0</span><span id="sec">0</span></p>
+            <p id="lastTime"></p>
+        </div>
+    <div id="buttons">
+        <button id="play" class="icon-play-1"></button>
+        <button id="stop" class="icon-pause"></button>
+        <button id="reset" class="icon-stop-1"></button>
+        <button id="cancel" class="icon-cancel"></button>
+    </div>
+    <button class="archieve" id="archieve">Archiwum</button>
+    <div id="archieveHistory" class="history hide"></div>
+</div>
+</div>
+<div id="colors" class="hidden">
+    <div class="dots" id="orange"></div>
+    <div class="dots" id="blue" ></div>
+    <div class="dots" id="green"></div>
+</div>
+    
+</body>
+</html>
